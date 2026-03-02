@@ -10,6 +10,7 @@ const port = process.env.PORT || 3000;
 
 
 
+
 //middleware
 app.use(express.json());
 app.use(cors());
@@ -47,7 +48,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    //await client.connect();
 
 
     const dB = client.db("quick_hire_db");
